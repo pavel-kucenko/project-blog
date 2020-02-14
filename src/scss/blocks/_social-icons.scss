@@ -2,19 +2,42 @@
     display: flex;
     align-items: center;
 }
-.social-icons__link{
+.social-icons__link {
     margin-right: 30px;
 
     &:last-child {
         margin-right: 0;
     }
 }
-.social-icons__img--instagram {
+.social-icons__link--share {
+    margin-right: 25px;
+}
+
+.social-icons__img-instagram {
     width: 22px;
 }
-.social-icons__img--twitter {
+
+.social-icons__img-instagram--share {
+    width: 19px;
+}
+
+.social-icons__img-twitter {
     width: 25px;
 }
-.social-icons__img--facebook {
+
+.social-icons__img-twitter--share {
+    width: 21px;
+}
+
+.social-icons__img-facebook {
     width: 14px;
 }
+
+.social-icons__img-facebook--share {
+    width: 12px;
+}
+
+.social-icons__img-whatsapp {
+    width: 21px;
+}
+

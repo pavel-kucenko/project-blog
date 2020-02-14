@@ -49,7 +49,7 @@ gulp.task('scss', function(callback) {
             outputStyle: "expanded"
         })
         )
-        .pipe(gcmq())
+        // .pipe(gcmq())
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 4 versions']
         }))

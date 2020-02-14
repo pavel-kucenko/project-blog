@@ -1,6 +1,9 @@
 header.header
     .header__social
-        include ./social-icons.pug
+        .social-icons            
+            +social-icon("social-icons__link", "instagram.svg", "instagram", "social-icons__img-instagram")
+            +social-icon("social-icons__link", "twitter.svg", "twitter", "social-icons__img-twitter")
+            +social-icon("social-icons__link", "facebook.svg", "facebook", "social-icons__img-facebook")
     .header__logo
         h1.logo Hipsum Blog
     .header__buttons

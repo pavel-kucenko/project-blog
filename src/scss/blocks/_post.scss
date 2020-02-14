@@ -1,0 +1,41 @@
+.post {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid rgb(221, 226, 231);      
+}
+.post__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 33px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    color: rgb(26, 26, 26);
+    line-height: 1.2;
+    text-align: center;
+}
+.post__info {
+    margin-bottom: 35px;
+    font-size: 14px;
+    color: rgb(176, 176, 176);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;      
+}
+.post__img {
+    margin-bottom: 40px;
+}
+.post__content {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: rgb(26, 26, 26);
+    line-height: 1.75;      
+}
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post__read-more {
+    font-size: 0;
+}

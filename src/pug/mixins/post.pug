@@ -1,0 +1,16 @@
+mixin post(title, info, img, link="#")
+    article.post
+        h2.post__title= title
+        .post__info= info
+        .post__img
+            img(src="./img/posts-preview/" + img, alt= title)
+        .post__content
+            block
+        .post__footer
+            .post__read-more
+                +button-read-more("Read More", link)
+            .social-icons                       
+                +social-icon("social-icons__link social-icons__link--share", "whatsapp.svg", "whatsapp", "social-icons__img-whatsapp")
+                +social-icon("social-icons__link social-icons__link--share", "instagram.svg", "instagram", "social-icons__img-instagram social-icons__img-instagram--share")
+                +social-icon("social-icons__link social-icons__link--share", "twitter.svg", "twitter", "social-icons__img-twitter social-icons__img-twitter--share")
+                +social-icon("social-icons__link social-icons__link--share", "facebook.svg", "facebook", "social-icons__img-facebook social-icons__img-facebook--share")
