@@ -1,0 +1,45 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 35px 0 75px;
+}
+
+.pagination__text-link {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+    
+    &:hover {
+        color: rgb(232, 76, 80);
+        text-decoration: none;
+    }
+}
+
+.pagination__current-link {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        color: rgb(232, 76, 80);
+        text-decoration: none;
+    }
+}
+
+.pagination__current-link--active {
+    color: rgb(232, 76, 80);
+}
