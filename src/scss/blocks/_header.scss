@@ -12,4 +12,11 @@
 .header__logo {
 }
 .header__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header__buttons-search {
+    margin-right: 45px;
+    cursor: pointer;
 }
