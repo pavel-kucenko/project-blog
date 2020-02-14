@@ -1,7 +1,5 @@
 .social-icons
-    a(href="#").social-icons__link
-        img(src="./img/icons/social/instagram.svg", alt="instagram-icon", width="22")
-    a(href="#").social-icons__link
-        img(src="./img/icons/social/twitter.svg", alt="twitter-icon", width="25")
-    a(href="#").social-icons__link
-        img(src="./img/icons/social/facebook-f.svg", alt="facebook-icon", width="14")
+    include ../mixins/mixins.pug
+    +social-icon("social-icons__link", "#", "./img/icons/social/instagram.svg", "instagram", "social-icons__img--instagram")
+    +social-icon("social-icons__link", "#", "./img/icons/social/twitter.svg", "twitter-icon", "social-icons__img--twitter")
+    +social-icon("social-icons__link", "#", "./img/icons/social/facebook-f.svg", "facebook-icon", "social-icons__img--facebook")
