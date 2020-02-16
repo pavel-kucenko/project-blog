@@ -1,6 +1,21 @@
 footer
     .footer
-        .
+        .container
+            .row
+                .col-3
+                    +footer-nav-list
+                        +footer-nav-item("Latest Posts")
+                        +footer-nav-item("Popular Posts")
+                .col-3 
+                    +footer-nav-list
+                        +footer-nav-item("Search")
+                        +footer-nav-item("Contact Information")
+                .col-3 
+                    +footer-nav-list
+                        +footer-nav-item("Privacy Policy")
+                        +footer-nav-item("Terms of Use")
+                .col-3
+                    include ./social-icons.pug
     .copyright
         .container
             .copyright__text © Copyright 2019. All rights reserved.

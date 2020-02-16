@@ -1,0 +1,30 @@
+.footer {
+    padding: 50px 0 80px;
+    background-color: #dde2e7;
+}
+.footer__nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+    color: rgb(142, 147, 153);
+
+    li {
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    a {
+        color: rgb(142, 147, 153);
+        text-decoration: none;
+        cursor: pointer;
+        
+        &:hover {
+            color: rgb(142, 147, 153);
+            text-decoration: underline;
+        }
+    }
+}
+
+  
