@@ -1,20 +1,15 @@
 // libs
-@import 'libs/bootstrap-reboot.scss';
-@import 'libs/bootstrap-grid.scss';
+@import "libs/bootstrap-reboot.scss";
+@import "libs/bootstrap-grid.scss";
+
+// Vars
+@import "./vars/variables";
+
+//Base
+@import "./base/base";
 
 // blocks
-@import 'blocks/base';
-@import 'blocks/header';
-@import 'blocks/social-icons';
-@import 'blocks/logo';
-@import 'blocks/buttons';
-@import 'blocks/post';
-@import 'blocks/pagination';
-@import 'blocks/widget';
-@import 'blocks/post-widget';
-@import 'blocks/widget-instagram';
-@import 'blocks/footer';
-@import 'blocks/copyright';
+@import "./blocks/**/*.scss";
 
 
 

@@ -9,6 +9,8 @@ const plumber = require('gulp-plumber');
 const gcmq = require('gulp-group-css-media-queries');
 const pug = require('gulp-pug');
 const del = require('del');
+const sassGlob = require('gulp-sass-glob');
+const fs = require('fs');
 
 
 //Таск для сборки паг файлов
@@ -23,9 +25,17 @@ gulp.task('pug', function(callback) {
                 }
             })
         }))
-        .pipe( pug({
-            pretty: true
-        }) )
+        .pipe( 
+            pug({
+                pretty: true,
+                // Парсим данные из Json
+                locals: {
+                    jsonData: JSON.parse(
+                        fs.readFileSync("./src/data/data.json", "utf8")
+                    )
+                }
+            })
+        )
         .pipe(gulp.dest('./build/'))
         .pipe(browserSync.stream())
     callback();
@@ -43,6 +53,7 @@ gulp.task('scss', function(callback) {
             })
         }))
         .pipe(sourcemaps.init())
+        .pipe(sassGlob())
         .pipe(sass({
             indentType: "tab",
             indentWidth: "1",
@@ -84,7 +95,7 @@ gulp.task('watch', function() {
     })
 
     //Слежение за PUG с задержкой 1 сек
-    watch('./src/pug/**/*.pug', function(){
+    watch(['./src/pug/**/*.pug', './src/data/**/*.json'], function(){
         setTimeout(gulp.parallel('pug'), 1000)
     })
 
